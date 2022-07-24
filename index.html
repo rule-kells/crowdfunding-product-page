@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <script defer src="./main.js"></script>
+  <title>Frontend Mentor | Crowdfunding product page</title>
+
+</head>
+
+<body>
+
+  <header>
+    <div class="overlay nav--overlay"></div>
+    <picture class="hero-bg">
+      <source srcset="./images/image-hero-desktop.jpg" media="(min-width: 768px)">
+      <img src="./images/image-hero-mobile.jpg" alt="" />
+    </picture>
+
+    <nav class="nav">
+      <a href="#"><img src="./images/logo.svg" alt="crowdfund"></a>
+      <div class="nav__toggle--container">
+        <div class="nav__toggle">
+          <button class="nav__toggle--open"><img src="./images/icon-hamburger.svg" alt=""></button>
+          <button class="nav__toggle--close"><img src="./images/icon-close-menu.svg" alt=""></button>
+        </div>
+      </div>
+
+      <ul class="nav__list">
+        <li class="nav__list--item"><a class="nav__list-link" href="#">About</a></li>
+        <li class="nav__list--item"><a class="nav__list-link" href="#">Discover</a></li>
+        <li class="nav__list--item"><a class="nav__list-link" href="#">Get Started</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container flow">
+      <section class="hero card">
+        <img class="logo" src="./images/logo-mastercraft.svg" alt="">
+        <div class="hero__content">
+          <h1 class="fs-heading fs-heading-l">Mastercraft Bamboo Monitor Riser</h1>
+          <p>A beautiful & handcrafted monitor stand to reduce neck and eye strain.</p>
+        </div>
+        <div class="backed__wrapper">
+          <button class="btn btn--modal">Back this project</button>
+          <div class="bookmark__wrapper">
+            <label for="Bookmark" aria-label="Bookmark">
+              <input type="radio" id="bookmark" name="bookmark" unchecked>
+              <img class="bookmark__img" src="./images/icon-bookmark.svg" alt="">
+            </label>
+            <h3 class="bookmark__title">Bookmark</h3>
+          </div>
+        </div>
+      </section>
+      <section class="backed card">
+        <div class="backed__content flow">
+          <h2 class="fs-heading fs-heading-xl">$89,914<span> of $100,000 backed</span></h2>
+          <h2 class="fs-heading fs-heading-xl">5,007 <span>total backers</span></h2>
+          <h2 class="fs-heading fs-heading-xl">56 <span>days left</span></h2>
+        </div>
+        <div class="progress__bar">
+          <span class="progress__bar--filled"></span>
+        </div>
+      </section>
+      <div class="about card flow">
+        <h3 class="fs-heading fs-heading-m">About this project</h3>
+        <p>
+          The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that elevates your screen
+          to a more comfortable viewing height. Placing your monitor at eye level has the potential to improve
+          your posture and make you more comfortable while at work, helping you stay focused on the task at hand.
+        </p>
+        <p>
+          Featuring artisan craftsmanship, the simplicity of design creates extra desk space below your computer
+          to allow notepads, pens, and USB sticks to be stored under the stand.
+        </p>
+        <div class="pledge__wrapper flow">
+          <div class="pledge bamboo card flow">
+            <h3 class="fs-heading fs-heading-s">Bamboo Stand</h3>
+            <h4 class="fs-heading fs-heading-xs">Pledge $25 or more</h4>
+            <p>
+              You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and
+              you’ll be added to a special Backer member list.
+            </p>
+            <h2 class="fs-heading fs-heading-xl">101 <span>left</span></h2>
+            <button class="btn btn--reward btn--modal">Select Reward</button>
+          </div>
+          <div class="pledge black-edition card flow">
+            <h3 class="fs-heading fs-heading-s">Black Edition Stand</h3>
+            <h4 class="fs-heading fs-heading-xs">Pledge $75 or more</h4>
+            <p>
+              You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer
+              member list. Shipping is included.
+            </p>
+            <h2 class="fs-heading fs-heading-xl">64 <span>left</span></h2>
+            <button class="btn btn--reward btn--modal">Select Reward</button>
+          </div>
+          <div class="pledge out-of-stock mahogany-special card flow">
+            <h3 class="fs-heading fs-heading-s">Mahogany Special Edition</h3>
+            <h4 class="fs-heading fs-heading-xs">Pledge $200 or more</h4>
+            <p>
+              You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added
+              to our Backer member list. Shipping is included.
+            </p>
+            <h2 class="fs-heading fs-heading-xl">0 <span>left</span></h2>
+            <button class="btn">Out of Stock</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
