@@ -851,8 +851,8 @@ span {
         padding: 2.375rem 2rem 2rem;
     }
 
-    .pledge .fs-heading:hover:not(nth-chile(4)),
-    .pledge .fs-heading:active:not(nth-chile(4)) {
+    .pledge:not(:last-child) .reward__wrapper .fs-heading:hover,
+    .pledge:not(:last-child) .reward__wrapper .fs-heading:active {
         cursor: pointer;
         color: var(--clr-palette-primary-300);
     }
