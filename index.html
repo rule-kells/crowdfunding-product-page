@@ -52,13 +52,15 @@
           <p>A beautiful & handcrafted monitor stand to reduce neck and eye strain.</p>
         </div>
         <div class="backed__wrapper">
-          <button class="btn btn--modal">Back this project</button>
-          <div class="bookmark__wrapper">
-            <label for="Bookmark" aria-label="Bookmark">
-              <input type="radio" id="bookmark" name="bookmark" unchecked>
-              <img class="bookmark__img" src="./images/icon-bookmark.svg" alt="">
-            </label>
-            <h3 class="bookmark__title">Bookmark</h3>
+          <button aria-expanded="true" class="btn btn--project">Back this project</button>
+          <div class="bookmark__wrapper ">
+            <button aria-pressed="true" class="bookmark__title">Bookmark</button>
+            <svg class="bookmark__img" width="56" height="56" xmlns="http://www.w3.org/2000/svg">
+              <g fill="none" fill-rule="evenodd">
+                <circle fill="#2F2F2F" cx="28" cy="28" r="28" />
+                <path fill="#B1B1B1" d="M23 19v18l5-5.058L33 37V19z" />
+              </g>
+            </svg>
           </div>
         </div>
       </section>
@@ -117,7 +119,142 @@
         </div>
       </div>
     </div>
+
+    <div class="modal__wrapper">
+      <div class="overlay modal--overlay overlay--thanks"></div>
+      <!-- modal  -->
+      <div class="modal">
+
+        <!-- Selection modal start -->
+        <div class="modal__header">
+          <h3 class="fs-heading">Back this project</h3>
+          <p class=" fs-modal-heading-s">Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the
+            world?
+          </p>
+          <button class="close__modal"><img src="./images/icon-close-modal.svg" alt=""></button>
+        </div>
+
+        <div class="pledge__wrapper  flow">
+          <div class="pledge pledge--modal no-reward card">
+            <div class="pledge__content">
+              <div class="reward__wrapper">
+                <input type="radio" name="no-reward" id="no-reward">
+                <label class="fs-heading fs-heading-s" for="no-reward">Pledge with no reward</label>
+              </div>
+              <p>
+                Choose to support us without a reward if you simply believe in our project. As a backer,
+                you will be signed up to receive product updates via email.
+              </p>
+            </div>
+          </div>
+
+          <div class="pledge pledge--modal pledge--drop-menu bamboo card">
+            <div class="pledge__content">
+              <div class="reward__wrapper">
+                <input id="bamboo" class="bamboo" type="radio" name="product">
+                <label class="fs-heading fs-heading-s" for="bamboo">Bamboo Stand</label>
+              </div>
+              <h4 class="fs-heading fs-modal-heading-s">Pledge $25 or more</h4>
+              <p>
+                You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and
+                you’ll be added to a special Backer member list.
+              </p>
+              <h2 class="fs-heading left">101 <span>left</span></h2>
+            </div>
+            <div class="pledge__selected">
+              <!-- Selected pledge start -->
+              <h3>Enter your pledge</h3>
+              <form>
+                <label for="amount-pledged" aria-label="$25">
+                  <span class="dollar-sign">$</span>
+                  <input type="text" id="amount-pledge-bamboo" class="amount-pledged" name="amount-pledge"
+                    value="25" data-keeper-edited="yes">
+                </label>
+                <button type="button" class="btn pledge__btn">Continue</button>
+              </form>
+              <!-- Selected pledge end -->
+            </div>
+          </div>
+
+          <div class="pledge pledge--modal pledge--drop-menu black-edition card">
+            <div class="pledge__content">
+              <div class="reward__wrapper">
+                <input type="radio" name="product" id="black">
+                <label class="fs-heading fs-heading-s" for="black">Black Edition Stand</label>
+              </div>
+              <h4 class="fs-heading fs-modal-heading-s">Pledge $75 or more</h4>
+              <p>
+                You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer
+                member list. Shipping is included.
+              </p>
+              <h2 class="fs-heading left">64 <span>left</span></h2>
+            </div>
+            <div class="pledge__selected">
+              <!-- Selected pledge start -->
+              <h3>Enter your pledge</h3>
+              <form>
+                <label for="amount-pledged" aria-label="$75">
+                  <span class="dollar-sign">$</span>
+                  <input type="text" id="amount-pledge-black" class="amount-pledged" name="amount-pledge"
+                    value="75" data-keeper-edited="yes">
+                </label>
+                <button type="button" class="btn pledge__btn">Continue</button>
+              </form>
+              <!-- Selected pledge end -->
+            </div>
+          </div>
+
+          <div class="pledge pledge--modal pledge--drop-menu out-of-stock mahogany-special card">
+            <div class="pledge__content">
+              <div class="reward__wrapper">
+                <input type="radio" name="product" id="mahogany">
+                <label class="fs-heading fs-heading-s" for="mahogany">Mahogany Special Edition</label>
+              </div>
+              <h4 class="fs-heading fs-modal-heading-s">Pledge $200 or more</h4>
+              <p>
+                You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added
+                to our Backer member list. Shipping is included.
+              </p>
+              <h2 class="fs-heading left">0 <span>left</span></h2>
+            </div>
+            <div class="pledge__selected">
+              <!-- Selected pledge  start -->
+              <h3>Enter your pledge</h3>
+              <form>
+                <label for="amount-pledged" aria-label="$200">
+                  <span class="dollar-sign"></span>
+                  <input type="text" id="amount-pledge-mahogany" class="amount-pledged" name="amount-pledge"
+                    placeholder="$200" data-keeper-edited="yes">
+                </label>
+                <button type="button" class="btn pledge__btn">Continue</button>
+              </form>
+              <!-- Selected pledge end -->
+
+              <!-- Success modal start -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Selection modal end -->
+
+      <div class="pledge__thanks flow">
+
+        <img src="./images/icon-check.svg" alt="">
+        <h2 class="fs-modal-heading-l">Thanks for your support!</h2>
+        <p class="fs-modal-body">
+          Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get
+          an email once our campaign is completed.
+        </p>
+        <button class="btn thanks--btn">Got it!</button>
+      </div>
+
+      <!-- Success modal end -->
+    </div>
   </main>
+
+
+
 </body>
 
 </html>
