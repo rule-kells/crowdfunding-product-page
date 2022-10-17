@@ -17,10 +17,10 @@
 
     /* ### font sizes  */
     --fs-heading-xl: 2rem;
-    --fs-heading-l: clamp(1.25rem, 3vw, 1.75rem);
-    --fs-heading-m: clamp(1.125rem, 3vw, 1.25rem);
-    --fs-heading-s: clamp(0.875rem, 3vw, 1.125rem);
-    --fs-heading-xs: clamp(0.875rem, 3vw, 0.9375rem);
+    --fs-heading-l: 1.25rem;
+    --fs-heading-m: 1.125rem;
+    --fs-heading-s: 0.875rem;
+    --fs-heading-xs: 0.875rem;
     --fs-body: 1rem;
 
     /* modal - font sizes  */
@@ -39,6 +39,14 @@
 
     --br: 8px;
 
+}
+
+@media (min-width: 50em) {
+    :root {
+        --fs-heading-m: 1.25rem;
+        --fs-heading-s: 1.125rem;
+        --fs-heading-xs: 0.9375rem;
+    }
 }
 
 html {
@@ -125,10 +133,10 @@ picture {
 .dollar-sign {
     position: absolute;
     font-weight: var(--fw-700);
-    font-size: 14px;
+    font-size: 0.875rem;
     color: hsla(0, 0%, 0%, 1);
     opacity: 25%;
-    margin: 16px 0 16px 24px;
+    margin: 1rem 0 1rem 1.5rem;
     z-index: 1;
 }
 
@@ -217,7 +225,7 @@ span {
 
 .btn--reward,
 .out-of-stock {
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 1.2;
 }
 
@@ -269,7 +277,7 @@ span {
     content: '';
     inset: 0;
     width: 100%;
-    height: 300px;
+    height: 18.75rem;
     position: absolute;
     background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.0001) 100%);
     opacity: 0.6;
@@ -278,7 +286,7 @@ span {
 .hero-bg img {
     position: relative;
     width: 100%;
-    height: 300px;
+    height: 18.75rem;
     object-fit: cover;
 }
 
@@ -288,7 +296,7 @@ span {
 
 .nav {
     position: relative;
-    max-width: 1108px;
+    max-width: 69.25rem;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -311,8 +319,8 @@ span {
 .nav__toggle--container,
 .nav__toggle--open,
 .nav__toggle--close {
-    width: 16px;
-    height: 16px;
+    width: 1rem;
+    height: 1rem;
 }
 
 .nav__toggle {
@@ -345,10 +353,10 @@ span {
 .active .nav__list {
     display: block;
     position: absolute;
-    inset: 88px 24px 0;
+    inset: 5.5rem 1.5rem 0;
     margin-right: 0;
     margin-left: auto;
-    max-width: 327px;
+    max-width: 20.4375rem;
     background-color: var(--white);
     border-radius: var(--br);
     color: var(--black);
@@ -356,7 +364,7 @@ span {
 
 .active .nav__list--item {
 
-    padding: 24px;
+    padding: 1.5rem;
     border-bottom: 1px solid hsla(0, 0%, 18%, .10);
 }
 
@@ -496,7 +504,7 @@ span {
 .pledge--drop-menu.is-selected:not(:nth-child(1)):not(:nth-child(4))::before {
     content: '';
     position: absolute;
-    inset: 280px 0 0;
+    inset: 17.5rem 0 0;
     border-top: 1px solid hsla(0, 0%, 0%, 0.15);
 }
 
@@ -512,9 +520,9 @@ span {
     background-color: var(--white);
     border-radius: var(--br);
     font-size: var(--fs-modal-body);
-    padding: 32px 24px 31px;
+    padding: 2rem 1.5rem 1.9375rem;
     /* margin: 121px auto 104px; */
-    inset: 121px 24px auto;
+    inset: 121px 1.5rem auto;
     margin-left: auto;
     margin-right: auto;
     z-index: 3;
@@ -529,7 +537,7 @@ span {
 .close__modal {
     position: absolute;
     top: 36px;
-    right: 24px;
+    right: 1.5rem;
 
 }
 
@@ -541,8 +549,8 @@ span {
     -webkit-appearance: none;
     appearance: none;
 
-    width: 24px;
-    height: 24px;
+    width: 1.5rem;
+    height: 1.5rem;
     border-radius: var(--br);
     padding: 5px;
     background-clip: content-box;
@@ -550,7 +558,7 @@ span {
 }
 
 .no-reward {
-    padding: 33px 24px 32px;
+    padding: 2.0625rem 1.5rem 2rem;
 }
 
 
@@ -563,7 +571,7 @@ span {
 
 .pledge--modal input[type='radio'] {
     position: absolute;
-    top: 33px;
+    top: 2.0625rem;
 }
 
 
@@ -590,8 +598,8 @@ span {
 
 .pledge--drop-menu.is-selected .pledge__selected {
     display: block;
-    padding-top: 24px;
-    max-width: 231px;
+    padding-top: 1.5rem;
+    max-width: 14.4375rem;
     margin: 0 auto;
 }
 
@@ -603,39 +611,39 @@ span {
 }
 
 .pledge__selected h3 {
-    font-size: 14px;
+    font-size: 0.875rem;
     text-align: center;
     margin-bottom: 1rem;
 }
 
 .amount-pledged {
-    --br: 34px;
+    --br: 2.125rem;
 
     width: 100%;
-    max-width: 100px;
+    max-width: 6.25rem;
     border: 1px solid hsla(0, 0%, 0%, 0.15);
     text-align: center;
-    padding: 16px 0;
+    padding: 1rem 0;
     border-radius: var(--br);
 
 }
 
 .pledge__selected .btn {
     font-family: var(--ff-primary);
-    font-size: 14px;
-    padding: 15px 26px;
-    max-width: 115px;
+    font-size: 0.875rem;
+    padding: 0.9375rem 1.625rem;
+    max-width: 7.1875rem;
 }
 
 /* thank you modal  */
 .pledge__thanks {
     display: none;
-    width: clamp(327px, 90%, 540px);
+    width: clamp(20.4375rem, 90%, 33.75rem);
     background-color: var(--white);
     border-radius: var(--br);
     border: 1px solid hsla(0, 0%, 0%, 0.05);
     text-align: center;
-    padding: 32px 24px 40px;
+    padding: 2rem 1.5rem 2.5rem;
     inset: 50% 0 auto 50%;
     transform: translate(-50%, -50%);
     z-index: 3;
@@ -662,16 +670,16 @@ span {
     /* hero background image (found in header) - desktop */
 
     .hero-bg::after {
-        height: 400px;
+        height: 25rem;
     }
 
     .hero-bg img {
-        height: 400px;
+        height: 25rem;
         object-fit: cover;
     }
 
     .nav {
-        padding: 48px 40px 332px;
+        padding: 3rem 2.5rem 20.75rem;
     }
 
 
@@ -713,14 +721,14 @@ span {
     }
 
     .bookmark__wrapper {
-        --br: 34px;
+        --br: 2.125rem;
         cursor: pointer;
         display: block;
         position: relative;
-        max-width: 174px;
+        max-width: 10.875rem;
         background-color: hsl(0, 0%, 96%);
         color: var(--clr-palette-neutral-600);
-        padding: 17px 24px 19px 72px;
+        padding: 1.0625rem 1.5rem 1.1875rem 4.5rem;
         border-radius: var(--br);
         transition: all .25s ease-in-out;
     }
@@ -763,7 +771,7 @@ span {
 
     /* backed section - desktop  */
     .backed {
-        padding: 48px 48px 49px;
+        padding: 3rem 3rem 3.0625rem;
     }
 
     .backed__content {
@@ -773,16 +781,16 @@ span {
         text-align: left;
         /* justify-content: space-around; */
         align-items: flex-end;
-        margin-bottom: 37px;
+        margin-bottom: 2.3125rem;
     }
 
 
     .backed__content .fs-heading-xl:nth-child(1) {
-        margin-right: 90px;
+        margin-right: 5.625rem;
     }
 
     .backed__content .fs-heading-xl:nth-child(2) {
-        margin-right: 139px;
+        margin-right: 8.6875rem;
     }
 
     .backed__content .fs-heading-xl span {
@@ -806,8 +814,8 @@ span {
         content: '';
         position: absolute;
         inset: 0;
-        left: -47px;
-        height: 63px;
+        left: -2.9375rem;
+        height: 3.9375rem;
         margin: 0 auto;
         border-left: 1px solid var(--black);
         opacity: 15%;
@@ -820,20 +828,20 @@ span {
 
     .active .modal {
         width: clamp(20ch, 90%, 45.625rem);
-        padding: 48.5px 48px 48.5px;
-        inset: 184px 32px auto;
+        padding: 3.0313rem 3rem 3.0313rem;
+        inset: 11.5rem 2rem auto;
     }
 
 
     .pledge {
         display: grid;
-        grid-template-columns: minmax(min-content, 214px) minmax(min-content, 214px) minmax(min-content, 200px);
-        grid-template-rows: 22px 60px 48px;
+        grid-template-columns: minmax(min-content, 13.375rem) minmax(min-content, 13.375rem) minmax(min-content, 12.5rem);
+        grid-template-rows: 1.375rem 3.75rem 3rem;
         grid-template-areas: 'item . pledge' 'content content content' 'left . btn';
         justify-content: center;
         align-items: center;
-        gap: 24px 0;
-        padding: 38px 32px 32px;
+        gap: 1.5rem 0;
+        padding: 2.375rem 2rem 2rem;
     }
 
     .pledge .fs-heading:hover:not(nth-chile(4)),
@@ -885,11 +893,11 @@ span {
     .pledge.pledge--modal {
 
         display: block;
-        padding: 33px 28px 32px 76px;
+        padding: 2.0625rem 1.75rem 2rem 4.75rem;
     }
 
     .pledge--drop-menu.is-selected:not(:nth-child(1)):not(:nth-child(4))::before {
-        inset: 157px 0 0;
+        inset: 9.8125rem 0 0;
     }
 
     .pledge--modal p {
@@ -899,16 +907,16 @@ span {
 
     .pledge .pledge__content {
         width: 100%;
-        max-width: 530px;
+        max-width: 33.125rem;
         display: grid;
-        grid-template-columns: minmax(190px, auto) minmax(152px, auto) minmax(128px, auto) minmax(61px, auto);
-        grid-template-rows: minmax(min-content, 19px) minmax(min-content, 56px);
+        grid-template-columns: minmax(11.875rem, auto) minmax(9.5rem, auto) minmax(8rem, auto) minmax(3.8125rem, auto);
+        grid-template-rows: minmax(min-content, 1.1875rem) minmax(min-content, 3.5rem);
         grid-template-areas: 'reward pledge . left' 'content content content content';
         align-items: center;
         margin: 0;
         margin-right: 0;
         margin-left: auto;
-        gap: 17px 0;
+        gap: 1.0625rem 0;
     }
 
     .pledge__content .reward__wrapper {
@@ -932,7 +940,7 @@ span {
         position: absolute;
         top: 0;
         bottom: 0;
-        left: -48px;
+        left: -3rem;
     }
 
     .no-reward .reward__wrapper {
@@ -946,7 +954,7 @@ span {
 
 
     .pledge__content .left {
-        font-size: 18px;
+        font-size: 1.125rem;
         grid-area: left;
     }
 
@@ -957,15 +965,15 @@ span {
 
     .pledge--drop-menu.is-selected .pledge__selected {
         display: grid;
-        max-width: 578px;
+        max-width: 36.125rem;
         position: relative;
-        grid-template-columns: minmax(min-content, 120px) minmax(min-content, 223px);
-        grid-template-rows: minmax(min-content, 48px);
+        grid-template-columns: minmax(min-content, 7.5rem) minmax(min-content, 13.9375rem);
+        grid-template-rows: minmax(min-content, 3rem);
         justify-content: space-between;
         align-items: center;
         padding: 0;
         margin: 0;
-        margin-top: 57px;
+        margin-top: 3.5625rem;
     }
 
 
@@ -974,7 +982,7 @@ span {
     }
 
     .pledge__thanks.selected {
-        padding: 48px;
+        padding: 3rem;
     }
 
 }
