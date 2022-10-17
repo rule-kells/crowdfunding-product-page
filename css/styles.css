@@ -24,10 +24,10 @@
     --fs-body: 1rem;
 
     /* modal - font sizes  */
-    --fs-modal-heading-l: clamp(1.125rem, 3vw, 1.5rem);
+    --fs-modal-heading-l: 1.125rem;
     --fs-modal-heading-m: 1.125rem;
-    --fs-modal-heading-s: clamp(0.875rem, 3vw, 1rem);
-    --fs-modal-body: clamp(0.875rem, 3vw, 0.9375rem);
+    --fs-modal-heading-s: 0.875rem;
+    --fs-modal-body: 0.875rem;
 
 
     /* ### Font  */
@@ -42,10 +42,17 @@
 }
 
 @media (min-width: 50em) {
+
+    /* ### font sizes  */
     :root {
         --fs-heading-m: 1.25rem;
         --fs-heading-s: 1.125rem;
         --fs-heading-xs: 0.9375rem;
+
+        /* modal - font sizes  */
+        --fs-modal-heading-l: 1.5rem;
+        --fs-modal-heading-s: 1rem;
+        --fs-modal-body:  0.9375rem;
     }
 }
 
